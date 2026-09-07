@@ -9,32 +9,47 @@ export const Header = () => {
         <div className="relative">
             <header className="fixed top-5 left-0 right-0 z-10 mx-10">
                 <div className='bg-white text-black max-w-330 mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5'>
-                    <Link to="/"><img className='w-32 md:w-36' src={Logo} alt="Logo SyntaxWear" /></Link>
+                    <Link to="/">
+                        <img className='w-32 md:w-36' src={Logo} alt="Logo SyntaxWear" />
+                    </Link>
+
                     <nav className='hidden md:block'>
                         <ul className='flex gap-10'>
                             <li>
-                                <Link to="/products">Masculino</Link>
+                                <a href="#">Masculino</a>
                             </li>
-                            <li><a href="#">Feminino</a></li>
-                            <li><a href="#">Outlet</a></li>
+
+                            <li>
+                                <a href="#">Feminino</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Outlet</a>
+                            </li>
                         </ul>
                     </nav>
 
                     <nav>
-                        <ul className='flex gap-10'>
+                        <ul className='flex gap-4 md:gap-10'>
                             <li className='hidden md:block'>
                                 <Link to='/our-stores'>Nossas lojas</Link>
                             </li>
 
-                            <li className='hidden md:block'><a href="#">Sobre</a></li>
-                            <li>
-                                <Link to="/sign-in">
-                                    <img src={IconUser} alt="Ícone de Login" />
-                                </Link>
+                            <li className='hidden md:block'>
+                                <Link to='/about'>Sobre</Link>
                             </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src={IconUser} alt="Ícone de Login" />
+                                </a>
+
+                            </li>
+
                             <li>
                                 <a href="#"><img src={IconAbout} alt="Ícone de Sobre" /></a>
                             </li>
+
                             <li>
                                 {/* <a href="#"><img src={IconCart} alt="Ícone de Carrinho" /></a> */}
 
