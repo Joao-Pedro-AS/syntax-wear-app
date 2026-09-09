@@ -50,13 +50,13 @@ export const Header = () => {
                             </li>
 
                             <li className='hidden lg:block'>
-                                <a href="#">
+                                <Link to="/sign-up">
                                     <img src={IconUser} alt="Ícone de Login" />
-                                </a>
+                                </Link>
                             </li>
 
                             <li className='hidden lg:block'>
-                                <Link to='/about'>
+                                <Link to="/about">
                                     <a href="#"><img src={IconAbout} alt="Ícone de Sobre" /></a>
                                 </Link>
                             </li>
@@ -70,4 +70,4 @@ export const Header = () => {
             </header>
         </div>
     );
-};
+}
