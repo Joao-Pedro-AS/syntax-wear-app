@@ -5,7 +5,7 @@ export const Route = createRootRoute({
     component: RootComponent,
     head: () => ({
         meta: [
-            { title: 'Inicio - SyntaxWear' }
+            { title: 'Início - SyntaxWear' }
         ],
     }),
 });
